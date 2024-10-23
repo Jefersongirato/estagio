@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBM - SINAM - Administrador</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        if (!localStorage.getItem('adminToken')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>CBM - SINAM - Painel do Administrador</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+        <!-- Gerenciar Alunos -->
+        <section>
+            <h2>Gerenciar Alunos</h2>
+            <button onclick="showSection('student-management')">Gerenciar Alunos</button>
+            <div id="student-management" style="display: none;">
+                <h3>Lista de Alunos</h3>
+                <ul id="students-list">
+                    <!-- Alunos serão listados dinamicamente -->
+                </ul>
+                <button onclick="addStudent()">Adicionar Aluno</button>
+            </div>
+        </section>
+
+        <!-- Gerenciar Matérias -->
+        <section>
+            <h2>Gerenciar Matérias</h2>
+            <button onclick="showSection('subject-management')">Gerenciar Matérias</button>
+            <div id="subject-management" style="display: none;">
+                <h3>Lista de Matérias</h3>
+                <ul id="subjects-list">
+                    <!-- Matérias serão listadas dinamicamente -->
+                </ul>
+                <button onclick="addSubject()">Adicionar Matéria</button>
+            </div>
+        </section>
+
+        <!-- Visualizar Relatórios -->
+        <section>
+            <h2>Relatórios</h2>
+            <button onclick="showSection('reports-management')">Visualizar Relatórios</button>
+            <div id="reports-management" style="display: none;">
+                <h3>Relatórios de Desempenho</h3>
+                <ul id="reports-list">
+                    <!-- Relatórios serão gerados dinamicamente -->
+                </ul>
+                <button onclick="generateReport()">Gerar Relatório</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBM/MT - Corpo de Bombeiros Militar de Mato Grosso.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBM - SINAM - Perfil do Aluno</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        if (!localStorage.getItem('sessionToken')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>CBM - SINAM - Perfil do Aluno</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <div id="profile-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button id="update-button" onclick="updateProfile()">Atualizar Perfil</button>
+        <p id="error-message" style="color: red; display: none;">Erro ao atualizar perfil. Verifique os campos.</p>
+    </div>
+
+    <footer>
+        <p>CBM/MT - Corpo de Bombeiros Militar de Mato Grosso.</p>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

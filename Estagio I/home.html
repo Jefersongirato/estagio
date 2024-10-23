@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBM - SINAM - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>CBM - SINAM - Dashboard</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+        <h2>Bem-vindo, [Nome do Aluno]</h2>
+
+        <!-- Notificações -->
+        <section>
+            <h3>Notificações</h3>
+            <ul id="notifications">
+                <!-- Notificações serão preenchidas dinamicamente -->
+            </ul>
+        </section>
+
+        <!-- Matérias Matriculadas -->
+        <section>
+            <h3>Matérias Matriculadas</h3>
+            <ul id="subjects">
+                <!-- Lista de matérias será preenchida dinamicamente -->
+            </ul>
+        </section>
+
+        <!-- Histórico Acadêmico -->
+        <section>
+            <h3>Histórico Acadêmico</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Matéria</th>
+                        <th>Nota</th>
+                        <th>Semestre</th>
+                    </tr>
+                </thead>
+                <tbody id="historico">
+                    <!-- Histórico Acadêmico será preenchido dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Calendário de Provas e Feedback -->
+        <section>
+            <h3>Calendário de Provas e Tarefas</h3>
+            <div id="calendario"></div>
+        </section>
+
+        <section>
+            <h3>Feedback de Desempenho</h3>
+            <ul id="feedback"></ul>
+        </section>
+
+        <!-- Exportar Notas para PDF -->
+        <section>
+            <h3>Exportar Notas</h3>
+            <button onclick="exportarNotasPDF()">Exportar Notas em PDF</button>
+        </section>
+
+        <!-- Comparar Desempenho -->
+        <section>
+            <h3>Análise Comparativa</h3>
+            <button onclick="compararDesempenho()">Comparar com Média da Turma</button>
+            <p id="resultado-comparacao"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CBM/MT - Corpo de Bombeiros Militar de Mato Grosso.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

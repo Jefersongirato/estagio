@@ -1,0 +1,263 @@
+/* Estilos Gerais do Sistema */
+
+/* Define as propriedades básicas do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url('../FUNDO LOGIN.jpg');
+    background-size: cover;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #ab0303;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+/* Estiliza os controles de acessibilidade */
+.accessibility-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.text-increase,
+.text-decrease {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #ab0303;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Estiliza o formulário de login */
+#login-form {
+    max-width: 300px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form img {
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    align-self: flex-start;
+}
+
+#login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#login-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estiliza o formulário de registro */
+#register-form {
+    max-width: 400px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-form label {
+    align-self: flex-start;
+}
+
+#register-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#register-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estiliza o formulário de recuperação de senha */
+#recover-form {
+    max-width: 300px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recover-form label {
+    align-self: flex-start;
+}
+
+#recover-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#recover-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estiliza o formulário de perfil */
+#profile-form {
+    max-width: 300px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-form label {
+    align-self: flex-start;
+}
+
+#profile-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#update-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estiliza o conteúdo do dashboard */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+main h2, main h3 {
+    text-align: center;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos do histórico acadêmico */
+#historico {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#historico th, #historico td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#historico th {
+    background-color: #ab0303;
+    color: white;
+}
+
+/* Estilos do calendário */
+#calendar {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ab0303;
+    color: #fff;
+}
